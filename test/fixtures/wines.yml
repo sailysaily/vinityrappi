@@ -1,0 +1,29 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  winery: MyString
+  rating: 1.5
+  region: MyString
+  grapes: MyString
+  color: MyString
+  wine_style: MyString
+  food_pairing: MyString
+  year: 1
+  story: MyText
+  backgroud_image: MyString
+  price: 1.5
+
+two:
+  name: MyString
+  winery: MyString
+  rating: 1.5
+  region: MyString
+  grapes: MyString
+  color: MyString
+  wine_style: MyString
+  food_pairing: MyString
+  year: 1
+  story: MyText
+  backgroud_image: MyString
+  price: 1.5

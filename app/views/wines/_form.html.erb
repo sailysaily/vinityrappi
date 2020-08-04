@@ -1,0 +1,24 @@
+
+<%= simple_form_for(@wine) do |f| %>
+  <%= f.error_notification %>
+  <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
+
+  <div class="form-inputs">
+    <%= f.input :name %>
+    <%= f.input :winery %>
+    <%= f.input :rating %>
+    <%= f.input :region %>
+    <%= f.input :grapes %>
+    <%= f.input :color %>
+    <%= f.input :wine_style %>
+    <%= f.input :food_pairing %>
+    <%= f.input :year %>
+    <%= f.input :story %>
+    <%= f.input :backgroud_image %>
+    <%= f.input :price %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>
