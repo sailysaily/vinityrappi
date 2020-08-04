@@ -60,5 +60,7 @@
   <%= @wine.price %>
 </p>
 
+<%= cl_image_tag @wine.photo.key %>
+
 <%= link_to 'Edit', edit_wine_path(@wine) %> |
 <%= link_to 'Back', root_path %>
