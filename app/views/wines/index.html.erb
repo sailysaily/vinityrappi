@@ -5,51 +5,56 @@
 <%= cl_image_tag("yeowbokdlagbdaejrhfk",
       width: 400, height: 300, crop: :fill) %>
 
+  <% @wines.each do |wine| %>
+
+  <p>Name: <%= wine.name %></p>
+  <p>Winery: <%= wine.winery %></p>
+  <p>Rating: <%= wine.rating %></p>
+  <p>Region: <%= wine.region %></p>
+  <p>Grapes: <%= wine.grapes %></p>
+  <p>Color: <%= wine.color %></p>
+  <p>Wine Style: <%= wine.wine_style %></p>
+  <p>Food Pairing: <%= wine.food_pairing %></p>
+  <p>Year: <%= wine.year %></p>
+  <p>Story: <%= wine.story %></p>
+  <p>Price: <%= wine.price %></p>
+  <%= cl_image_tag wine.photo.key %>
 
 
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Winery</th>
-      <th>Rating</th>
-      <th>Region</th>
-      <th>Grapes</th>
-      <th>Color</th>
-      <th>Wine style</th>
-      <th>Food pairing</th>
-      <th>Year</th>
-      <th>Story</th>
-      <th>Backgroud image</th>
-      <th>Price</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+  <p><%= link_to 'Show', wine %></p>
+  <p><%= link_to 'Edit', edit_wine_path(wine) %></p>
+  <p><%= link_to 'Destroy', wine, method: :delete, data: { confirm: 'Are you sure?' } %></p>
 
-  <tbody>
-    <% @wines.each do |wine| %>
-      <tr>
-        <td><%= wine.name %></td>
-        <td><%= wine.winery %></td>
-        <td><%= wine.rating %></td>
-        <td><%= wine.region %></td>
-        <td><%= wine.grapes %></td>
-        <td><%= wine.color %></td>
-        <td><%= wine.wine_style %></td>
-        <td><%= wine.food_pairing %></td>
-        <td><%= wine.year %></td>
-        <td><%= wine.story %></td>
-        <td><%= wine.backgroud_image %></td>
-        <td><%= wine.price %></td>
+  <% end %>
 
 
-        <td><%= link_to 'Show', wine %></td>
-        <td><%= link_to 'Edit', edit_wine_path(wine) %></td>
-        <td><%= link_to 'Destroy', wine, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+
+<br>
+
+
+
+
+<% @wines.each do |wine| %>
+  <div class="card-product-wine">
+    <div class = rating-photo>
+      <div class="card-product-information">
+        <h2><%= wine.rating %></h2>
+        <p><%= rand(1..2000) %> ratings </p>
+      </div>
+      <div class="card-product-information">
+         <%= cl_image_tag wine.photo.key %>
+      </div>
+    </div>
+    <div class="card-product-details">
+      <p><%= wine.winery %></p>
+      <h2> <strong><%= wine.name %></strong></h2>
+      <p> <%= wine.color %> from <%= wine.region %></p>
+    </div>
+</div>
+<% end %>
+
+
+
 
 <br>
 
