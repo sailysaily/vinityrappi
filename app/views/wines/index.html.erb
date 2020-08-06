@@ -18,14 +18,22 @@
         <h2><%= wine.rating %></h2>
         <p><%= rand(1..2000) %> ratings </p>
       </div>
-      <div class="card-product-information">
+      <div class="card-product-photo">
          <%= cl_image_tag wine.photo.key %>
       </div>
     </div>
     <div class="card-product-details">
-      <p><%= wine.winery %></p>
+      <h3><%= wine.winery %></h3>
       <h2> <strong><%= wine.name %></strong></h2>
-      <p> <%= wine.color %> from <%= wine.region %></p>
+        <div class = country-flag>
+          <div class="avatar-flag">
+            <%= cl_image_tag wine.country_photo.key %>
+          </div>
+          <div class="origin">
+            <p> <%= wine.color %> from <%= wine.region %></p>
+          </div>
+
+        </div>
     </div>
      <p><%= link_to 'Show', wine %></p>
      <p><%= link_to 'Edit', edit_wine_path(wine) %></p>
