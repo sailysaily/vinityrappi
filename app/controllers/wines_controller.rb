@@ -42,7 +42,7 @@ class WinesController < ApplicationController
   # DELETE /wines/1
   def destroy
     @wine.destroy
-    redirect_to root_path, notice: 'Wine was successfully destroyed.'
+    redirect_to wines_url, notice: 'Wine was successfully destroyed.'
   end
 
   private
