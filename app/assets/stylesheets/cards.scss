@@ -50,13 +50,20 @@
 .card-product-photo{
   padding-right: 32px;
   padding-top: 16px;
+  width: 100px;
   background-color: #F7F3F0;
+  position: relative;
+
+
 
 
 
  img {
   height: 100%;
-  width: 70px;
+  width: 75px;
+  position: absolute;
+  right: 30px;
+  top: 25px;
 }
 }
 
