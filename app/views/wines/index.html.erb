@@ -15,8 +15,9 @@
   <div class="card-product-wine">
     <div class = rating-photo>
       <div class="card-product-information">
-        <h2><%= wine.rating %></h2>
-        <p><%= rand(1..2000) %> ratings </p>
+        <p> Rating Vivino </p>
+        <h2> <%= wine.rating %></h2>
+        <h3>Price <%= wine.price %> </h3>
       </div>
       <div class="card-product-photo">
          <%= cl_image_tag wine.photo.key %>
@@ -34,6 +35,9 @@
           </div>
 
         </div>
+        <div>
+            <p><%= wine.wine_style %></p>
+          </div>
     </div>
      <p><%= link_to 'Show', wine %></p>
      <p><%= link_to 'Edit', edit_wine_path(wine) %></p>
