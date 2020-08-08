@@ -1,9 +1,24 @@
 .avatar-large {
-  width: 128px;
+  width: 170px;
   border-radius: 50%;
 }
 
 .avatar-container{
   display: flex;
   justify-content: space-evenly;
+  font-family: 'Quicksand', sans-serif;
+  color: rgb(100,100,100);
+  font-size: 25px;
+  padding-top: 50px;
+  p{
+    padding-right: 20px;
+    text-align: center;
+  }
+}
+
+.avatar_details{
+  justify-content: center;
+  img{
+    justify-content: center;
+  }
 }
