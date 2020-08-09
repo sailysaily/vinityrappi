@@ -13,43 +13,38 @@
 
 
 
-
-
-<br>
-
-
-
 <% @wines.each do |wine| %>
-  <div class="card-product-wine">
-    <div class = rating-photo>
-      <div class="card-product-information">
-        <p> Rating Vivino </p>
-        <h2> <%= wine.rating %></h2>
-        <h3>Price <%= wine.price_cop %> </h3>
-      </div>
-      <div class="card-product-photo">
-         <%= cl_image_tag wine.photo.key %>
-      </div>
-    </div>
-    <div class="card-product-details">
-      <h3><%= wine.winery %></h3>
-      <h2> <strong><%= wine.name %></strong></h2>
-        <div class = country-flag>
-          <div class="avatar-flag">
-            <%= cl_image_tag wine.country_photo.key %>
-          </div>
-          <div class="origin">
-            <p> <%= wine.color %> from <%= wine.region %></p>
-          </div>
-
+  <div id="wine-container">
+    <div class="card-product-wine">
+      <div class = rating-photo>
+        <div class="card-product-information">
+          <p> Rating Vivino </p>
+          <h2> <%= wine.rating %></h2>
+          <p>Price</p>
+          <h2>$<%= wine.price_cop %></h2>
         </div>
-        <div>
+        <div class="card-product-photo">
+           <%= cl_image_tag wine.photo.key %>
+        </div>
+      </div>
+      <div class="card-product-details">
+        <h3><%= wine.winery %></h3>
+        <h2> <strong><%= wine.name %></strong></h2>
+          <div class = country-flag>
+            <div class="avatar-flag">
+              <%= cl_image_tag wine.country_photo.key %>
+            </div>
+            <div class="origin">
+              <p> <%= wine.color %> from <%= wine.region %></p>
+            </div>
+          </div>
+          <div class="wine_style">
             <p><%= wine.wine_style %></p>
           </div>
+      </div>
+       <p><%= link_to 'Show', wine %></p>
     </div>
-     <p><%= link_to 'Show', wine %></p>
-
-</div>
+  </div>
 <% end %>
 
 

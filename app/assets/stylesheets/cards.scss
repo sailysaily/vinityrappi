@@ -1,6 +1,13 @@
+#wine-container{
+  display: inline-grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+}
+
 .card-product-wine{
   padding-left: 50px;
-  width: 400px;
+  width: 500px;
+  padding-top: 50px;
 }
 
 .rating-photo{
@@ -9,27 +16,35 @@
 
 
 .card-product-information{
-  height: 300px;
+  height: 450px;
   background-color: #F7F3F0;
-  width: 200px;
+  width: 180px;
   text-align: center;
+  padding-left:40px;
+  padding-top: 70px;
+
+
 
 
   h2{
-    font-size: 30px;
+    font-size: 25px;
+    font-family: 'Quattrocento', serif;
+    font-weight: bold;
+    line-height: 1px;
   }
   p {
     padding-top: 50px;
-    font-size: 15px;
+    font-size: 20px;
+    font-family: 'Quattrocento', serif;
   }
-  h3{
-    font-size: 25px;
-  }
+
 }
 
 .card-product-details{
-  height: 140px;
+  height: 180px;
   background-color: rgb(250,250,250);
+  width: 430px;
+  padding-top: 30px;
 
 
   h2{
@@ -39,8 +54,8 @@
   }
 
   p{
-    font-size: 9px;
-    padding-left: 15px;
+    font-size: 12px;
+    padding-left: 20px;
   }
 
   h3{
@@ -51,9 +66,9 @@
 }
 
 .card-product-photo{
-  padding-right: 32px;
+  padding-right: 48px;
   padding-top: 16px;
-  width: 150px;
+  width: 250px;
   background-color: #F7F3F0;
   position: relative;
 
@@ -62,11 +77,11 @@
 
 
  img {
-  height: 100%;
-  width: 90px;
+  height: 480px;
+  width: 130px;
   position: absolute;
-  right: 40px;
-  top: 25px;
+  right: 75px;
+  top: 20px;
 }
 }
 
@@ -85,7 +100,12 @@
 
 .origin {
   p {
-    font-size: 10px;
+    font-size: 12px;
     padding-top: 6px;
+    padding-left: 10px;
   }
+}
+
+.wine_style{
+  font-size: 30px;
 }
