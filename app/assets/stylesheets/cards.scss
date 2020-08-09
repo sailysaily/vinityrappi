@@ -1,5 +1,5 @@
-#wine-container{
-  display: inline-grid;
+#wine-container {
+  display:grid;
   grid-template-columns: auto auto;
   justify-content: center;
 }
