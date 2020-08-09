@@ -1,5 +1,9 @@
 <h1>Editing Wine</h1>
 
+<%= link_to 'New Wine', new_wine_path %>
+
+<p><%= link_to 'Destroy', @wine, method: :delete, data: { confirm: 'Are you sure?' } %></p>
+
 <%= render 'form', wine: @wine %>
 
 <%= link_to 'Show', @wine %> |
