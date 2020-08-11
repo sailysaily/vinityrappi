@@ -1,8 +1,7 @@
 #wine-container {
-  display:grid;
-  grid-template-columns: auto auto;
-  justify-content: center;
+  display: block;
 }
+
 
 .card-product-wine{
   padding-left: 50px;
@@ -109,3 +108,12 @@
 .wine_style{
   font-size: 30px;
 }
+
+@media (min-width: 570px) {
+    #wine-container {
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      justify-content: center;
+}
+}
+
