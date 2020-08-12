@@ -1,5 +1,19 @@
 .oferta-bogota{
-  padding-top: 50px;
+  padding-top: 90px;
   text-align: center;
   font-family: 'Quattrocento', serif;
+  font-size: 30px;
+   padding-botton: 70px;
+   font-weight: bold;
+}
+
+
+@media (min-width: 570px) {
+.oferta-bogota{
+  padding-top: 100px;
+  text-align: center;
+  font-family: 'Quattrocento', serif;
+  font-size: 70px;
+  padding-bottom: 100px;
+}
 }
