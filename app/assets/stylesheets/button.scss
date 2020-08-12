@@ -4,9 +4,9 @@
   padding: 8px 24px;
   border-radius: 50px;
   font-family: 'Quicksand', sans-serif;
-  height:90px;
-  width: 250px;
-  font-size: 40px;
+  height:70px;
+  width: 190px;
+  font-size: 20px;
   font-weight: bold;
   opacity: 0.8;
   transition: opacity 0.3s ease;
@@ -51,9 +51,9 @@
   padding: 8px 24px;
   border-radius: 50px;
   font-family: 'Quicksand', sans-serif;
-  height:80px;
-  width: 220px;
-  font-size: 35px;
+  height:40px;
+  width: 110px;
+  font-size: 15px;
   font-weight: bold;
   opacity: 0.8;
   transition: opacity 0.3s ease;
@@ -63,3 +63,13 @@
  color: rgb(200,200,200);
  border: 2px solid rgb(200,200,200);
 }
+
+@media (min-width: 570px) {
+  .btn-navbar {
+  height:60px;
+  width: 150px;
+  font-size: 25px;
+}
+
+}
+
