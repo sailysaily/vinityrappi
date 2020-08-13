@@ -9,7 +9,8 @@
 
 </div>
 
-<h1 class="oferta-bogota">Nuestra Oferta en Bogotá</h1>
+<div class="background-index">
+  <h1 class="oferta-bogota">Nuestra Oferta en Bogotá</h1>
 
 
 <div id="wine-container">
@@ -19,7 +20,7 @@
       <div class = rating-photo>
         <div class="card-product-information">
           <p> Rating Vivino </p>
-          <h2> <%= wine.rating %></h2>
+           <h2> <i class="fas fa-star"></i> <%= wine.rating %></h2>
           <p>Price</p>
           <h2>$<%= wine.price_cop %></h2>
         </div>
@@ -41,10 +42,17 @@
           <div class="wine_style">
             <p><%= wine.wine_style %></p>
           </div>
+          <div class="wine-availability">
+           <%= wine.availability %></p>
+          </div>
       </div>
        <p><%= link_to 'Show', wine %></p>
     </div>
 
 <% end %>
  </div>
+
+
+
+</div>
 
