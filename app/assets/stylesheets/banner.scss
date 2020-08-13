@@ -14,11 +14,11 @@
 }
 
 #banner-title{
-  font-size: 130px;
+  font-size: 70px;
 }
 
 .banner p {
-  font-size: 40px;
+  font-size: 30px;
   color: white;
   font-family: 'Quicksand', sans-serif;
   opacity: .7;
@@ -35,4 +35,20 @@
 
 .button-banner{
   padding-top: 175px;
+}
+
+
+@media (min-width: 570px) {
+ #banner-title{
+  font-size: 130px;
+}
+
+.banner p {
+  font-size: 40px;
+  color: white;
+  font-family: 'Quicksand', sans-serif;
+  opacity: .7;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
 }

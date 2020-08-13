@@ -6,7 +6,7 @@
   font-family: 'Quicksand', sans-serif;
   height:70px;
   width: 190px;
-  font-size: 20px;
+  font-size: 30px;
   font-weight: bold;
   opacity: 0.8;
   transition: opacity 0.3s ease;
@@ -69,6 +69,20 @@
   height:60px;
   width: 150px;
   font-size: 25px;
+}
+
+ .btn-ghost {
+  color: white;
+  border: 3px solid white;
+  padding: 8px 24px;
+  border-radius: 50px;
+  font-family: 'Quicksand', sans-serif;
+  height:90px;
+  width: 250px;
+  font-size: 40px;
+  font-weight: bold;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
 }
 
 }
