@@ -17,6 +17,7 @@
     <%= f.input :backgroud_image %>
     <%= f.input :price_cop %>
      <%= f.input :availability %>
+      <%= f.input :category, collection: Wine.categories.keys %>
     <%= f.input :photo, as: :file %>
     <%= f.input :country_photo, as: :file %>
   </div>
