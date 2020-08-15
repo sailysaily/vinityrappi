@@ -39,14 +39,15 @@
               <p> <%= wine.color %> from <%= wine.region %></p>
             </div>
           </div>
-          <div class="wine_style">
+          <div class="wine-style">
             <p><%= wine.wine_style %></p>
           </div>
           <div class="wine-availability">
-           <%= wine.availability %></p>
+           <p id="availability-wine"><%= wine.availability %></p>
           </div>
       </div>
-       <p><%= link_to 'Show', wine %></p>
+       <p><%# link_to 'Show', wine %></p>
+       <p id ="order-now">Order now  <a href="https://wa.link/h4ajs5"><i class="fab fa-whatsapp"></i></a></p>
     </div>
 
 <% end %>

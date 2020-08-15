@@ -48,16 +48,27 @@
   text-align: right;
   padding-right: 5%;
   font-family: 'Quattrocento', serif;
+
+  p{
+    font-size: 20px;
+  }
+
+}
+
+#availability-wine {
+  font-size: 20px;
 }
 
 .card-product-details{
-  height: 195px;
+  font-family: 'Quicksand', sans-serif;
+  height: 220px;
   background-color: rgb(250,250,250);
   width: 100%;
   padding-top: 30px;
 
 
   h2{
+    font-weight: bold;
     font-size: 20px;
     padding-left: 15px;
 
@@ -69,6 +80,7 @@
   }
 
   h3{
+    font-weight: bold;
     padding-top: 10px;
     font-size: 15px;
     padding-left: 15px;
@@ -106,14 +118,29 @@
 
 .origin {
   p {
-    font-size: 12px;
+    font-size: 14px;
     padding-top: 6px;
     padding-left: 10px;
   }
 }
 
-.wine_style{
-  font-size: 30px;
+.wine-style{
+  padding-right: 10px;
+  p{
+    font-size: 14px;
+  }
+}
+
+#order-now{
+ font-family: 'Quattrocento', serif;
+ font-size: 20px;
+ padding-left: 4%;
+ font-weight: bold;
+
+ a{
+  color: #781323;
+  padding-left: 1%;
+ }
 }
 
 @media (min-width: 570px) {
@@ -123,7 +150,8 @@
       justify-content: center;
 }
 .card-product-details{
-  height: 195px;
+  font-family: 'Quicksand', sans-serif;
+  height: 220px;
   background-color: rgb(250,250,250);
   width: 75%;
   padding-top: 30px;
