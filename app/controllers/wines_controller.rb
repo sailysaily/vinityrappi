@@ -4,6 +4,7 @@ class WinesController < ApplicationController
   # GET /wines
   def index
     @wines = Wine.all
+    @categories = Wine.categories.keys
   end
 
   # GET /wines/1
